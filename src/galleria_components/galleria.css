@@ -42,13 +42,30 @@
   text-emphasis-color: black;
   height: 60px;
 }
-
+#shop {
+}
+#logo1 {
+  background-color: rgb(0, 0, 0);
+  caret-color: black;
+}
+#compila {
+  margin-top: -170px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 #signupbox {
   margin-left: 600px;
-  margin-top: -230px;
+  margin-top: -620px;
   width: 3000px;
   font-size: small;
   background-color: rgb(235, 224, 224);
+}
+
+#minimal {
+  margin-top: 30px;
+  width: 349px;
+  height: 400px;
 }
 #signupb {
   margin-left: px;
@@ -57,8 +74,9 @@
   font-family: fantasy;
 }
 #bottone {
-  margin-left: 30px;
+  margin-left: -135px;
   margin-top: -20px;
+  width: 500px;
 }
 
 .form-label {
@@ -72,4 +90,60 @@
 .form-group {
   height: 60px;
   font-size: smaller;
+}
+
+#si {
+  margin-top: -50px;
+}
+
+#divbuttn {
+  margin-top: -80px;
+  margin-left: 160px;
+}
+
+#vestiti {
+  margin-top: 30px;
+  height: 300px;
+  width: 1000px;
+}
+
+#v1 {
+  height: 180px;
+  width: 200000px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+#v2 {
+  height: 180px;
+  margin-left: px;
+  margin-right: -15px;
+}
+#v3 {
+  height: 180px;
+  margin-left: 105px;
+  margin-bottom: 20px;
+}
+#boxVestiti1 {
+  width: 900px;
+  margin-left: 20px;
+}
+#boxVestiti2 {
+  width: 900px;
+  margin-left: 336px;
+  margin-top: -200px;
+}
+#boxVestiti3 {
+  width: 900px;
+  margin-left: 650px;
+  margin-top: -200px;
+}
+
+#container1 {
+  margin-top: -35px;
+  margin-left: 130px;
+  width: 1000px;
+}
+
+#modale {
+  width: 400px;
 }

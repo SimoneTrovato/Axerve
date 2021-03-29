@@ -79,87 +79,140 @@ class Galleria extends Component {
     switch (this.state.form) {
       case false:
         return (
-          <div className="album py-5 bg-light">
+          <div className="album py-5 bg-light" id="sfondo">
             <header>
               <div class="col-md-4 ">
-                <h4 className="col-md-4  ">Your shop</h4>
-                <button
-                  type="button"
-                  className="btn btn-primary btn-sm. "
-                  onClick={() => {
-                    this.handleForm();
-                  }}
-                >
-                  Contattaci
-                </button>
+                <div>
+                  <div
+                    id="si"
+                    class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2"
+                  >
+                    <h4 className="col-md-4  ">Your Shop</h4>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    id="divbuttn"
+                    class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2"
+                  >
+                    <button
+                      type="button"
+                      className="btn btn-primary btn-sm. "
+                      onClick={() => {
+                        this.handleForm();
+                      }}
+                    >
+                      Contattaci
+                    </button>
+                  </div>
+                </div>
               </div>
             </header>
-            <div className="container">
-              <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div className="container" id="container1">
+              <div
+                className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+                id="boxVestiti1"
+              >
                 <img
                   src={img1}
-                  id="1"
+                  id="v1"
                   alt={img1}
                   className="bd-placeholder-img card-img-top"
                   value="1"
                   onClick={() => this.handleModale(this.campi[0])}
                 />
-
+              </div>
+              <div
+                className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+                id="boxVestiti2"
+              >
                 <img
                   src={img2}
-                  id="2"
+                  id="v1"
                   alt={img2}
                   className="bd-placeholder-img card-img-top"
                   onClick={() => this.handleModale(this.campi[1])}
                 />
-
+              </div>{" "}
+              <div
+                className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+                id="boxVestiti3"
+              >
                 <img
                   src={img3}
-                  id="3"
+                  id="v1"
                   alt={img3}
                   className="bd-placeholder-img card-img-top"
                   onClick={() => this.handleModale(this.campi[2])}
                 />
-
+              </div>{" "}
+              <div
+                className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+                id="boxVestiti1"
+              >
                 <img
                   src={img3}
-                  id="4"
+                  id="v1"
                   alt={img3}
                   className="bd-placeholder-img card-img-top"
                   onClick={() => this.handleModale(this.campi[3])}
                 />
+              </div>{" "}
+              <div
+                className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+                id="boxVestiti2"
+              >
                 <img
                   src={img1}
-                  id="5"
+                  id="v1"
                   alt={img1}
                   className="bd-placeholder-img card-img-top"
                   onClick={() => this.handleModale(this.campi[4])}
                 />
+              </div>{" "}
+              <div
+                className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+                id="boxVestiti3"
+              >
                 <img
                   src={img2}
-                  id="6"
+                  id="v1"
                   alt={img2}
                   className="bd-placeholder-img card-img-top"
                   onClick={() => this.handleModale(this.campi[5])}
                 />
-
+              </div>{" "}
+              <div
+                className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+                id="boxVestiti1"
+              >
                 <img
                   src={img2}
-                  id="7"
+                  id="v1"
                   alt={img2}
                   className="bd-placeholder-img card-img-top"
                   onClick={() => this.handleModale(this.campi[6])}
                 />
+              </div>{" "}
+              <div
+                className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+                id="boxVestiti2"
+              >
                 <img
                   src={img3}
-                  id="8"
+                  id="v1"
                   alt={img3}
                   className="bd-placeholder-img card-img-top"
                   onClick={() => this.handleModale(this.campi[7])}
                 />
+              </div>{" "}
+              <div
+                className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+                id="boxVestiti3"
+              >
                 <img
                   src={img1}
-                  id="9"
+                  id="v1"
                   alt={img1}
                   className="bd-placeholder-img card-img-top"
                   onClick={() => this.handleModale(this.campi[8])}
@@ -167,7 +220,7 @@ class Galleria extends Component {
               </div>
             </div>
 
-            <Modal show={show} onHide={""} className="modale">
+            <Modal id="modale" show={show} onHide={""} className="modale">
               {" "}
               <Modal.Header
                 closeButton
@@ -179,9 +232,13 @@ class Galleria extends Component {
                 }}
               >
                 {" "}
-                {this.campi[this.state.idImmagine].nome}
+                <font>
+                  {" "}
+                  {this.campi[this.state.idImmagine].nome} N°{" "}
+                  {this.campi[this.state.idImmagine].id}{" "}
+                </font>
               </Modal.Header>
-              <Modal.Body className="modalBody">
+              <Modal.Body id="modale" className="modalBody">
                 <div
                   id="carouselExampleControls"
                   class="carousel slide"
